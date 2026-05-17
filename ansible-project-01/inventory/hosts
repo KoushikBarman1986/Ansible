@@ -1,1 +1,18 @@
+[appservers]
+node-01 ansible_host=172.31.3.43 ansible_user=ansible env=test
+
+[webservers]
+node-03 ansible_host=172.31.71.100 ansible_user=ansible env=stage
+
+
+#[koushik:children]
+#appservers
+#webservers
+
+[appservers:vars]
+lastname=barman
+
+[webservers:vars]
+lastname=wang
+~
 
